@@ -6,7 +6,7 @@ var htmltidy = require('gulp-htmltidy');
 gulp.task('default', function () {
   gulp.src('*.htm*')
     .pipe(iconv({
-      decoding: 'ISO-8859-15',
+      decoding: 'utf-8',
       encoding: 'utf8'
     }))
     .pipe(htmltidy({
